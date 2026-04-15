@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Sheet | Derick-Dat Phan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #05112c;
+        --panel: #0a1d4d;
+        --line: rgba(158, 248, 255, 0.2);
+        --cyan: #9ef8ff;
+        --white: #f6fbff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        color: var(--white);
+        background:
+          radial-gradient(circle at top left, rgba(86, 140, 255, 0.28), transparent 24%),
+          linear-gradient(135deg, #030b1d 0%, var(--bg) 52%, #091d57 100%);
+        font-family: "Barlow Condensed", sans-serif;
+      }
+
+      .sheet {
+        width: min(72rem, calc(100% - 2rem));
+        margin: 1rem auto 2rem;
+        padding: 1.2rem;
+      }
+
+      .top,
+      .block {
+        background: rgba(8, 25, 72, 0.92);
+        border: 1px solid var(--line);
+        box-shadow: 12px 12px 0 rgba(0, 0, 0, 0.26);
+        clip-path: polygon(0 0, 100% 0, calc(100% - 1rem) 100%, 0 100%);
+      }
+
+      .top {
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .kicker,
+      .meta,
+      .item-meta,
+      .back {
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+      }
+
+      .kicker,
+      .item-meta {
+        color: var(--cyan);
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        line-height: 0.92;
+      }
+
+      h1 {
+        margin-top: 0.35rem;
+        font-size: clamp(3rem, 8vw, 5.4rem);
+      }
+
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-top: 0.9rem;
+      }
+
+      .meta span,
+      .pill {
+        padding: 0.45rem 0.75rem;
+        border: 1px solid var(--line);
+        clip-path: polygon(0 0, 100% 0, calc(100% - 0.7rem) 100%, 0 100%);
+        background: rgba(255, 255, 255, 0.04);
+      }
+
+      .grid {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1.2fr 1fr;
+      }
+
+      .stack {
+        display: grid;
+        gap: 1rem;
+      }
+
+      .block {
+        padding: 1.2rem;
+      }
+
+      .section-title {
+        margin-top: 0.4rem;
+        margin-bottom: 0.8rem;
+        font-size: clamp(2rem, 5vw, 3rem);
+      }
+
+      .item + .item {
+        margin-top: 0.95rem;
+        padding-top: 0.95rem;
+        border-top: 1px solid var(--line);
+      }
+
+      .item-header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: start;
+      }
+
+      .item h3 {
+        font-size: 1.45rem;
+      }
+
+      p,
+      li {
+        font-size: 1.05rem;
+        line-height: 1.4;
+      }
+
+      ul {
+        margin: 0.6rem 0 0;
+        padding-left: 1rem;
+      }
+
+      .pill-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.55rem;
+      }
+
+      .back {
+        display: inline-flex;
+        margin-top: 1rem;
+        color: var(--white);
+        text-decoration: none;
+      }
+
+      @media (max-width: 900px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+
+        .item-header {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="sheet">
+      <section class="top">
+        <p class="kicker">Resume Sheet</p>
+        <h1>Derick-Dat Phan</h1>
+        <div class="meta">
+          <span>de078521@ucf.edu</span>
+          <span>407-232-1533</span>
+          <span>Orlando, FL</span>
+          <span>UCF / Expected 2028</span>
+        </div>
+        <a class="back" href="./index.html">Back to Persona Interface</a>
+      </section>
+
+      <section class="grid">
+        <div class="stack">
+          <article class="block">
+            <p class="kicker">Education</p>
+            <h2 class="section-title">University of Central Florida</h2>
+            <p>Bachelor of Science in Biomedical Sciences with a minor in Health Sciences. Expected graduation: 2028.</p>
+          </article>
+
+          <article class="block">
+            <p class="kicker">Clinical Experience</p>
+            <h2 class="section-title">Care and Observation</h2>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Chau Medical Group</h3>
+                <span class="item-meta">Medical Assistant / August 2025 - Present</span>
+              </div>
+              <ul>
+                <li>Performed basic clinical tasks including vital signs, patient histories, and exam preparation.</li>
+                <li>Conducted EKGs and specimen collection while following infection control protocols.</li>
+                <li>Worked closely with physicians, nurses, and office staff to support smooth daily operations.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Chau Medical Group</h3>
+                <span class="item-meta">Shadowing / July 2025 - August 2025</span>
+              </div>
+              <ul>
+                <li>Observed patient interviews, physical exams, and clinical decision-making in primary care visits.</li>
+                <li>Watched referral coordination, imaging and lab workflows, and result tracking for continuity of care.</li>
+                <li>Observed preventative care discussions including screenings, vaccines, and lifestyle counseling.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="block">
+            <p class="kicker">Leadership</p>
+            <h2 class="section-title">SASE UCF</h2>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Science Chair</h3>
+                <span class="item-meta">August 2025 - Present</span>
+              </div>
+              <ul>
+                <li>Created and hosted pre-health workshops teaching clinical skills to 20+ members.</li>
+                <li>Hosted informational events in a welcoming format that encouraged stronger participation.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Intern</h3>
+                <span class="item-meta">January 2025 - May 2025</span>
+              </div>
+              <ul>
+                <li>Assisted with General Board Meeting planning and member-focused social programming.</li>
+                <li>Helped improve attendance and campus engagement.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="stack">
+          <article class="block">
+            <p class="kicker">Volunteer Work</p>
+            <h2 class="section-title">Service</h2>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Adopt-A-Precinct | SASE UCF</h3>
+                <span class="item-meta">Oct. 2024 - Nov. 2024</span>
+              </div>
+              <ul>
+                <li>Managed polling setup, voter flow, and secure ballot handling in a professional environment.</li>
+                <li>Assisted with check-in, registration verification, ballot procedures, and equipment troubleshooting.</li>
+              </ul>
+            </div>
+
+            <div class="item">
+              <div class="item-header">
+                <h3>Kumon</h3>
+                <span class="item-meta">Volunteer Tutor / April 2023 - July 2023</span>
+              </div>
+              <ul>
+                <li>Coached younger students in mathematics and English using clear, approachable explanations.</li>
+                <li>Built patience and communication skills while tutoring children.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="block">
+            <p class="kicker">Skills</p>
+            <h2 class="section-title">Current Loadout</h2>
+            <div class="pill-row">
+              <span class="pill">Patient Handling</span>
+              <span class="pill">Problem Solving</span>
+              <span class="pill">Communication</span>
+              <span class="pill">Empathy</span>
+              <span class="pill">Adaptability</span>
+              <span class="pill">Spectrophotometry</span>
+              <span class="pill">Micropipetting</span>
+              <span class="pill">Autoclaving</span>
+              <span class="pill">Sterile Techniques</span>
+              <span class="pill">Specimen Collection</span>
+              <span class="pill">Shot Administration</span>
+              <span class="pill">Intergy by Greenway Health</span>
+              <span class="pill">Microsoft Office Suite</span>
+            </div>
+          </article>
+
+          <article class="block">
+            <p class="kicker">Certifications</p>
+            <h2 class="section-title">Verified Training</h2>
+            <ul>
+              <li>CompTIA IT Fundamentals (ITF+) Certification (2022)</li>
+              <li>Biotechnology Aptitude and Competency Exam - Biotility (2024)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
