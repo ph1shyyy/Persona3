@@ -7,7 +7,7 @@ Persona-inspired interactive resume site for Derick-Dat Phan.
 - `index.html`: main interface
 - `styles.css`: Persona-inspired visual system and responsive layout
 - `script.js`: resume data, section rendering, and keyboard navigation
-- `Derick-Phan-Resume.pdf`: downloadable resume asset
+- `resume.html`: standalone HTML resume sheet
 
 ## Run locally
 
