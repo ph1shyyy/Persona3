@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Persona-inspired interactive resume for Derick-Dat Phan, a Biomedical Sciences student at the University of Central Florida."
+    />
+    <title>Persona 3 Resume | Derick-Dat Phan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Barlow+Condensed:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="scanlines" aria-hidden="true"></div>
+    <div class="background-aura" aria-hidden="true">
+      <span class="aura aura-one"></span>
+      <span class="aura aura-two"></span>
+      <span class="aura aura-three"></span>
+      <span class="diagonal diagonal-one"></span>
+      <span class="diagonal diagonal-two"></span>
+    </div>
+
+    <div class="start-overlay" id="startOverlay" role="dialog" aria-label="Launch resume interface">
+      <div class="start-card">
+        <p class="start-system">SEES RESUME INTERFACE</p>
+        <h1>PRESS START</h1>
+        <p class="start-name">DERICK-DAT PHAN</p>
+        <p class="start-subtitle">Biomedical Sciences student / pre-health track / clinical support</p>
+        <button class="start-button" id="startButton" type="button">Enter Resume Mode</button>
+        <p class="start-hint">You can also press Enter or Space.</p>
+      </div>
+    </div>
+
+    <main class="app-shell" id="appShell">
+      <header class="topbar">
+        <div>
+          <p class="topbar-kicker">Persona 3 Resume</p>
+          <h1 class="topbar-title">Derick-Dat Phan</h1>
+        </div>
+        <div class="topbar-status">
+          <span>UCF / Expected 2028</span>
+          <span>Orlando, FL</span>
+        </div>
+      </header>
+
+      <section class="layout">
+        <aside class="menu-panel">
+          <div class="menu-brand">
+            <p class="menu-label">Command Menu</p>
+            <div class="menu-wordmark" aria-label="Resume">
+              <span>R</span>
+              <span>E</span>
+              <span>S</span>
+              <span>U</span>
+              <span>M</span>
+              <span>E</span>
+            </div>
+          </div>
+
+          <nav class="menu-list" id="menuList" aria-label="Resume sections"></nav>
+
+          <div class="menu-footer">
+            <a href="mailto:de078521@ucf.edu">de078521@ucf.edu</a>
+            <a href="tel:+14072321533">407-232-1533</a>
+            <a href="./Derick-Phan-Resume.pdf" target="_blank" rel="noreferrer">Open PDF Resume</a>
+            <a href="https://github.com/ph1shyyy" target="_blank" rel="noreferrer">github.com/ph1shyyy</a>
+          </div>
+        </aside>
+
+        <section class="hero-panel">
+          <div class="hero-card">
+            <div class="hero-rank">
+              <span class="hero-rank-label">Arcana</span>
+              <strong id="heroRank">HEALTH SCIENCES</strong>
+            </div>
+            <p class="hero-eyebrow" id="heroEyebrow">Mission Brief</p>
+            <h2 class="hero-title" id="heroTitle">Building clinical experience through care, leadership, and service.</h2>
+            <p class="hero-copy" id="heroCopy">
+              UCF Biomedical Sciences student with hands-on experience in patient intake, EKGs, specimen collection,
+              pre-health workshops, and community service.
+            </p>
+            <div class="hero-actions">
+              <a class="action action-primary" href="./Derick-Phan-Resume.pdf" target="_blank" rel="noreferrer">
+                Download Resume
+              </a>
+              <a class="action action-secondary" href="mailto:de078521@ucf.edu">Email Derick</a>
+            </div>
+            <div class="stat-grid" id="statGrid" aria-label="Key stats"></div>
+          </div>
+
+          <div class="hero-side">
+            <article class="signal-card">
+              <p class="signal-label">Current Direction</p>
+              <h3>Pre-health momentum with real clinical exposure.</h3>
+              <p>
+                Current work blends medical assistant responsibilities, physician shadowing, student leadership, and
+                volunteer service into one coherent healthcare track.
+              </p>
+            </article>
+
+            <article class="signal-card alternate">
+              <p class="signal-label">Quick Read</p>
+              <ul class="signal-list" id="quickFacts"></ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="detail-panel">
+          <div class="detail-frame">
+            <div class="detail-heading">
+              <div>
+                <p class="detail-kicker" id="detailKicker">Selected Section</p>
+                <h2 class="detail-title" id="detailTitle">Overview</h2>
+              </div>
+              <div class="detail-index" id="detailIndex">01</div>
+            </div>
+
+            <p class="detail-summary" id="detailSummary"></p>
+
+            <div class="detail-tags" id="detailTags"></div>
+
+            <div class="detail-list" id="detailList"></div>
+          </div>
+        </section>
+      </section>
+
+      <footer class="hud">
+        <div class="hud-group">
+          <span class="hud-key">↑ ↓</span>
+          <span>Navigate</span>
+        </div>
+        <div class="hud-group">
+          <span class="hud-key">Enter</span>
+          <span>Open Action</span>
+        </div>
+        <div class="hud-group">
+          <span class="hud-key">Esc</span>
+          <span>Open Start Screen</span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
